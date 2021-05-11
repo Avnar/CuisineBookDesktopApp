@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Apkaprojektzespol\\foldernwmco\\projektzespolowy\\projektzespolowy\\projektzespolowy.csproj": {}
+    "D:\\Apkaprojektzespol\\desktopApp\\ProjektZespolowy\\ProjektZespolowy.csproj": {}
   },
   "projects": {
-    "D:\\Apkaprojektzespol\\foldernwmco\\projektzespolowy\\projektzespolowy\\projektzespolowy.csproj": {
+    "D:\\Apkaprojektzespol\\desktopApp\\ProjektZespolowy\\ProjektZespolowy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Apkaprojektzespol\\foldernwmco\\projektzespolowy\\projektzespolowy\\projektzespolowy.csproj",
-        "projectName": "projektzespolowy",
-        "projectPath": "D:\\Apkaprojektzespol\\foldernwmco\\projektzespolowy\\projektzespolowy\\projektzespolowy.csproj",
+        "projectUniqueName": "D:\\Apkaprojektzespol\\desktopApp\\ProjektZespolowy\\ProjektZespolowy.csproj",
+        "projectName": "ProjektZespolowy",
+        "projectPath": "D:\\Apkaprojektzespol\\desktopApp\\ProjektZespolowy\\ProjektZespolowy.csproj",
         "packagesPath": "C:\\Users\\Dragonexx\\.nuget\\packages\\",
-        "outputPath": "D:\\Apkaprojektzespol\\foldernwmco\\projektzespolowy\\projektzespolowy\\obj\\",
+        "outputPath": "D:\\Apkaprojektzespol\\desktopApp\\ProjektZespolowy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "I:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Dragonexx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -57,11 +59,11 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "Microsoft.WindowsDesktop.App.WPF": {
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

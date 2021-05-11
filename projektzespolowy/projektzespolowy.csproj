@@ -3,7 +3,23 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Ikony\add.png" />
+    <None Remove="Ikony\exit.png" />
+    <None Remove="Ikony\findwhite.png" />
+    <None Remove="Ikony\icon.png" />
+    <None Remove="Ikony\speed.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Ikony\add.png" />
+    <Resource Include="Ikony\exit.png" />
+    <Resource Include="Ikony\findwhite.png" />
+    <Resource Include="Ikony\icon.png" />
+    <Resource Include="Ikony\speed.png" />
+  </ItemGroup>
 
 </Project>
