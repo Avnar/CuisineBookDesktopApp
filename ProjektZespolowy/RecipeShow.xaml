@@ -1,0 +1,36 @@
+﻿<Window x:Class="ProjektZespolowy.RecipeShow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektZespolowy"
+        mc:Ignorable="d"
+        Title="RecipeShow" Height="450" Width="800" AllowsTransparency="True" Background="Transparent" WindowStyle="None">
+    <Grid>
+        <Border CornerRadius="10" Grid.RowSpan="3" Grid.ColumnSpan="2" >
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#FFD38412" Offset="0.0"/>
+                    <GradientStop Color="#FFD38412" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border BorderThickness="1" BorderBrush="Black" RenderTransformOrigin="0.509,0.528">
+                <Label x:Name="lb_name" Content="Nazwa przepisu" Margin="0,4,0,0" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top" HorizontalAlignment="Center" Width="509"/>
+            </Border>
+        </Border>
+        <Label x:Name="lb_lvl" Content="Poziom Trudności" Margin="604,67,6,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Right" Foreground="White" Height="38" VerticalAlignment="Top"/>
+        <Label x:Name="lb_time" Content="Czas Gotowania" Margin="604,107,6,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Right" Foreground="White" Height="38" VerticalAlignment="Top"/>
+        <Label x:Name="lb_category" Content="Kategoria" Margin="604,141,6,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Right" Foreground="White" Height="38" VerticalAlignment="Top"/>
+
+        <Label x:Name="lb_calories" Content="Wartość kaloryczna" Margin="604,174,6,238" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Right" Foreground="White"/>
+        <Button x:Name="b_cancel" Content="Wstecz&#xD;&#xA;" Margin="353,404,353,7" Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="20" BorderBrush="{x:Null}" Click="b_back_Click"/>
+        <TextBlock x:Name="tb_content" Text="Sposób Przygotowania" TextWrapping="Wrap" Margin="22,224,24,52" Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" FontSize="20" Foreground="White" TextAlignment="Left"/>
+        <TextBlock x:Name="tb_items" Text="Składniki" TextWrapping="Wrap"  Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" FontSize="20" Foreground="White" TextAlignment="Left" Margin="7,102,380,284"/>
+        <Label Content="Składniki" Margin="80,67,518,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
+        <Label Content="Poziom Trudności" Margin="423,67,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
+        <Label Content="Czas Przygotowania" Margin="423,107,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
+        <Label Content="Kategoria" Margin="423,141,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
+        <Label Content="Wartość Kaloryczna" Margin="423,174,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
+        <Label Content="Sposób przygotowania" Margin="65,170,504,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

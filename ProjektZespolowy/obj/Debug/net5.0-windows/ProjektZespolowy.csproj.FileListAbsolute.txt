@@ -20,6 +20,11 @@ C:\Users\Dragonexx\source\repos\ProjektZespolowy\ProjektZespolowy\obj\Debug\net5
 C:\Users\Dragonexx\source\repos\ProjektZespolowy\ProjektZespolowy\obj\Debug\net5.0-windows\ref\ProjektZespolowy.dll
 C:\Users\Dragonexx\source\repos\ProjektZespolowy\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.pdb
 C:\Users\Dragonexx\source\repos\ProjektZespolowy\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.genruntimeconfig.cache
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\LoginRegisterWindow.g.cs
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\Main Window.g.cs
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\App.g.cs
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy_MarkupCompile.cache
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy_MarkupCompile.lref
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\ProjektZespolowy.exe
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\ProjektZespolowy.deps.json
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\ProjektZespolowy.runtimeconfig.json
@@ -27,11 +32,13 @@ D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Projek
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\ProjektZespolowy.dll
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\ref\ProjektZespolowy.dll
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\ProjektZespolowy.pdb
-D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.csprojAssemblyReference.cache
-D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\App.g.cs
-D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy_MarkupCompile.cache
-D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy_MarkupCompile.lref
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\SearchWindow.g.cs
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\LoginRegisterWindow.baml
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\Main Window.baml
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\SearchWindow.baml
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.g.resources
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.Properties.Resources.resources
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.csproj.GenerateResource.cache
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.GeneratedMSBuildEditorConfig.editorconfig
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.AssemblyInfoInputs.cache
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.AssemblyInfo.cs
@@ -40,9 +47,23 @@ D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\Projek
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ref\ProjektZespolowy.dll
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.pdb
 D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.genruntimeconfig.cache
-D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\Main Window.g.cs
-D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\Main Window.baml
-D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.Properties.Resources.resources
-D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.csproj.GenerateResource.cache
-D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\LoginRegisterWindow.g.cs
-D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\LoginRegisterWindow.baml
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\Addrecipe.g.cs
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\Addrecipe.baml
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.csproj.CopyComplete
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\CaloriesCalculator.g.cs
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\CaloriesCalculator.baml
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\ProjektZespolowy.csproj.AssemblyReference.cache
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\RecipeShow.g.cs
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Microsoft.Extensions.Options.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\bin\Debug\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
+D:\Apkaprojektzespol\desktopApp\ProjektZespolowy\obj\Debug\net5.0-windows\RecipeShow.baml

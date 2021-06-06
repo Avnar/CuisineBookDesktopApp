@@ -23,13 +23,22 @@ namespace ProjektZespolowy
         {
             InitializeComponent();
             sethidden();
+            password_tb.Text = "";
+            usernameTb.Text = "";
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            Main_Window mainwindow = new Main_Window();
-            mainwindow.Show();
-            this.Close();
+            if (usernameTb.Text == "admin"&& password_tb.Text =="admin")
+            {
+                Main_Window mainwindow = new Main_Window();
+                mainwindow.Show();
+                this.Close();
+            }
+            else
+            {
+                Application.Current.Shutdown();
+            }
         }
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)

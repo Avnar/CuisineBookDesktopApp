@@ -23,7 +23,6 @@ namespace ProjektZespolowy
         {
             InitializeComponent();
         }
-
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
@@ -32,22 +31,28 @@ namespace ProjektZespolowy
 
         private void addRecipe_b_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Hide();
+            Addrecipe recipewindow = new Addrecipe();
+            recipewindow.Show();
         }
 
         private void find_b_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void calculator_b_Click(object sender, RoutedEventArgs e)
-        {
-
+            this.Hide();
+            SearchWindow window = new SearchWindow();
+            window.Show();
         }
 
         private void exit_b_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void calculator_b_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            CaloriesCalculator calculator = new CaloriesCalculator();
+            calculator.Show();
         }
     }
 }

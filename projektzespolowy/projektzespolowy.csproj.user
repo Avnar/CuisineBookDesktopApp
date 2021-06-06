@@ -7,18 +7,42 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Addrecipe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CaloriesCalculator.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoginRegisterWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Main Window.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="RecipeShow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Addrecipe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CaloriesCalculator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="LoginRegisterWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Main Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RecipeShow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SearchWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

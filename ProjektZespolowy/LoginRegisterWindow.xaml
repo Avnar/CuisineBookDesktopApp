@@ -16,11 +16,11 @@
                 <RowDefinition Height="293*"/>
             </Grid.RowDefinitions>
 
-            <Border CornerRadius="10" Grid.RowSpan="2" Height="450" VerticalAlignment="Bottom">
+            <Border CornerRadius="10" Grid.RowSpan="2">
                 <Border.Background>
                     <LinearGradientBrush>
-                        <GradientStop Color="#FF128DD3" Offset="0.0"/>
-                        <GradientStop Color="#FFC59EC5" Offset="1"/>
+                        <GradientStop Color="#FFD38412" Offset="0.0"/>
+                        <GradientStop Color="#FFD38412" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
 
@@ -35,9 +35,9 @@
                     Opacity="0.5"
                     SelectionOpacity="1" Margin="64,222,91,204"/>
             </Border>
-            <Border x:Name="registerUnderline" Width="250"
+            <Border x:Name="registerUnderline"
                         Background="White"
-                        Opacity="0.5" Margin="70,91,71,200" Grid.Row="1"/>
+                        Opacity="0.5" Margin="60,88,63,203" Grid.Row="1"/>
 
             <StackPanel VerticalAlignment="Top" Height="190" HorizontalAlignment="Center" Width="189" Grid.RowSpan="2" Margin="0,20,0,0">
                 <Image Height="153" Stretch="Fill" Source="/Ikony/icon.png" Width="185"/>
@@ -66,19 +66,17 @@
                              Margin="63,0,0,0" SelectionOpacity="1"/>
 
                 </StackPanel>
-                <Border Width="250"
+                <Border Width="270"
                         Height="2"
                         Background="White"
                         Opacity="0.5"/>
 
 
-
                 <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                    <PasswordBox x:Name="password_tb" FontFamily="Quicksand"
+                    <TextBox Text="********" TextWrapping="Wrap"
+                             Name="password_tb" FontFamily="Quicksand"
                              FontWeight="Bold"
-                             Password="Password"
                              FontSize="20"
-                             HorizontalAlignment="Center"
                              Foreground="White"
                              Background="Transparent"
                              BorderThickness="0"
@@ -89,7 +87,7 @@
                              Margin="63,0,0,0"/>
 
                 </StackPanel>
-                <Border Width="250"
+                <Border Width="268"
                         Height="2"
                         Background="White"
                         Opacity="0.5"/>

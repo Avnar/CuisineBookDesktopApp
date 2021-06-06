@@ -1,0 +1,45 @@
+﻿<Window x:Class="ProjektZespolowy.CaloriesCalculator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektZespolowy"
+        mc:Ignorable="d"
+        Title="CaloriesCalculator" Height="477" Width="452" WindowStyle="None" AllowsTransparency="True" Background="Transparent" MouseDown="Window_MouseDown">
+    <Grid>
+        <Border CornerRadius="10" Height="475" VerticalAlignment="Center">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#FFD38412" Offset="0.0"/>
+                    <GradientStop Color="#FFD38412" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <ListBox x:Name="lb_summary" Height="100" Margin="33,243,33,134" FontSize="18" FontWeight="Bold" FontFamily="Quicksand" />
+        <Button x:Name="b_back"  Margin="150,433,150,3" Content="Powrót" Background="Transparent" BorderThickness="0" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="18" Click="b_back_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBox x:Name="tb_wynik" Text="" TextWrapping="Wrap" Margin="125,383,133,65" FontSize="18" FontWeight="Bold" FontFamily="Quicksand"/>
+        <TextBox x:Name="tb_value" Text="" TextWrapping="Wrap" Margin="104,188,107,260" FontSize="18" FontWeight="Bold" FontFamily="Quicksand"/>
+        <Label Content="Kalkulator Kalorii" Margin="58,12,58,392" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White"/>
+        <Label Content="Podaj wartość" Margin="52,154,64,293" FontFamily="Quicksand" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White"/>
+        <Button x:Name="b_add"  Margin="346,182,70,260" Content="+" Background="Transparent" BorderThickness="0" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="32" Click="b_add_click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="b_equals"  Margin="324,380,92,62" Content="=" Background="Transparent" BorderThickness="0" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="32" Click="b_equals_Click" RenderTransformOrigin="0.199,0.533">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
