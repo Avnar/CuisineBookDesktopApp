@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektZespolowy"
         mc:Ignorable="d"
-        Title="LoginRegisterWindow" Height="450" Width="391"
+        Title="LoginRegisterWindow" Height="477" Width="391"
     AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
         MouseDown="LoginRegisterWindow_OnMouseDown">
@@ -28,34 +28,35 @@
                     FontWeight="Bold"
                     Text="email"
                     FontSize="20"
+                    Height="25"
                     Foreground="White"
                     Background="Transparent"
                     BorderThickness="0"
                     HorizontalContentAlignment="Left"
                     Opacity="0.5"
-                    SelectionOpacity="1" Margin="64,222,91,204"/>
+                    SelectionOpacity="1" Margin="64,250,91,195"/>
             </Border>
             <Border x:Name="registerUnderline"
                         Background="White"
-                        Opacity="0.5" Margin="60,88,63,203" Grid.Row="1"/>
+                        Height="2"
+                        Opacity="0.5" Margin="62,109,61,200" Grid.Row="1"/>
 
             <StackPanel VerticalAlignment="Top" Height="190" HorizontalAlignment="Center" Width="189" Grid.RowSpan="2" Margin="0,20,0,0">
                 <Image Height="153" Stretch="Fill" Source="/Ikony/icon.png" Width="185"/>
             </StackPanel>
             <TextBlock Text="Cuisine Book"
-                           FontWeight="Medium"
+                           FontWeight="Bold"
                            FontFamily="Quicksand"
                            FontSize="22"
                            Foreground="White" VerticalAlignment="Top" Margin="124,27,127,0" Height="26" Grid.Row="1"/>
 
 
-            <StackPanel Grid.Row="1" Margin="0,110,0,0" >
+            <StackPanel Grid.Row="1" Margin="0,140,0,0" >
                 <StackPanel Orientation="Horizontal">
                     <TextBox x:Name="usernameTb" FontFamily="Quicksand"
                              FontWeight="Bold"
                              Text="Nazwa użytkownika"
                              FontSize="20"
-                             HorizontalAlignment="Center"
                              Foreground="White"
                              Background="Transparent"
                              BorderThickness="0"
@@ -72,7 +73,7 @@
                         Opacity="0.5"/>
 
 
-                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                <StackPanel Orientation="Horizontal" Margin="0,25,0,0">
                     <TextBox Text="********" TextWrapping="Wrap"
                              Name="password_tb" FontFamily="Quicksand"
                              FontWeight="Bold"
@@ -112,7 +113,7 @@
                 </StackPanel>
 
             </StackPanel>
-            <Button x:Name="save_b" Width="100" Height="40" Content="ZAREJESTRUJ" Margin="140,214,151,0" Click="SaveButton_Click" VerticalAlignment="Top" Grid.Row="1">
+            <Button x:Name="save_b" Width="100" Height="40" Content="ZAREJESTRUJ" Margin="140,249,151,0" Click="SaveButton_Click" VerticalAlignment="Top" Grid.Row="1">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5"/>
@@ -121,6 +122,41 @@
             </Button>
 
         </Grid>
+        <Label x:Name="lb_email" Content="email" Margin="59,225,258,222" FontFamily="Quicksand"
+                    FontWeight="Bold"
+                    
+                    FontSize="20"
+                    Foreground="White"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    HorizontalContentAlignment="Left"
+                    Opacity="0.5"
+                    />
+        <Label x:Name="lb_username" Content="Nazwa użytkownika" Margin="58,278,125,165" FontFamily="Quicksand"
+                    FontWeight="Bold"
+                    FontSize="20"
+                    Foreground="White"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    HorizontalContentAlignment="Left"
+                    Opacity="0.5"/>
+        <Label x:Name="lb_password" Content="Hasło" Margin="57,333,240,113"
+               FontFamily="Quicksand"
+                    FontWeight="Bold"
+                    FontSize="20"
+                    Foreground="White"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    HorizontalContentAlignment="Left"
+                    Opacity="0.5"/>
+        <Button x:Name="b_close" Margin="359,0,0,445" Background="Transparent" BorderThickness="0" Click="b_close_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+            <Image Height="29" Stretch="Fill" Source="Ikony/closewindow.png" Width="29"/>
+        </Button>
 
     </Grid>
 </Window>

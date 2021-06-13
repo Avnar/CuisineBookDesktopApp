@@ -21,6 +21,7 @@ namespace ProjektZespolowy
             sethidden();
             password_tb.Text = "";
             usernameTb.Text = "";
+            lb_email.Visibility = Visibility.Hidden;
         }
        private readonly HttpClient _httpClient = new HttpClient();
         public async Task<string> LoginAsync(string url)
@@ -89,11 +90,13 @@ namespace ProjektZespolowy
         }
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
+            lb_email.Visibility = Visibility.Visible;
             register_b.Visibility = Visibility.Hidden;
             login_b.Visibility = Visibility.Hidden;
             register_tb.Visibility = Visibility.Visible;
             registerUnderline.Visibility = Visibility.Visible;
             save_b.Visibility = Visibility.Visible;
+            register_tb.Text = "";
 
         }
 
@@ -112,6 +115,11 @@ namespace ProjektZespolowy
         private async void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             await RegisterAsync("https://localhost:44314/api/Identity/Register");
+        }
+
+        private void b_close_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

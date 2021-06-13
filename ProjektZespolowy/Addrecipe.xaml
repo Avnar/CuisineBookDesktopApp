@@ -35,7 +35,13 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="b_cancel" Content="Anuluj" Margin="289,677,50,15" Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="18" BorderBrush="{x:Null}" Click="b_cancel_Click"/>
+        <Button x:Name="b_cancel" Content="Anuluj" Margin="289,677,50,15" Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="18" BorderBrush="{x:Null}" Click="b_cancel_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <TextBox x:Name="tb_level" Text="" TextWrapping="Wrap" Margin="120,218,120,484" FontSize="18" FontWeight="Bold"/>
         <TextBox x:Name="tb_time" Text="" TextWrapping="Wrap" Margin="120,282,120,420" FontSize="18" FontWeight="Bold"/>
         <TextBox x:Name="tb_category" Text="" TextWrapping="Wrap" Margin="120,413,120,289" FontSize="18" FontWeight="Bold"/>

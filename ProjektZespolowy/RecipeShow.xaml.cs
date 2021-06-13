@@ -27,6 +27,7 @@ namespace ProjektZespolowy
             _food = food;
             GettingData();
         }
+        
         private void b_back_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -34,7 +35,7 @@ namespace ProjektZespolowy
             searchWindow.Show();
 
         }
-        private void GettingData()
+        public void GettingData()
         {
             lb_name.Content = _food.Title;
             lb_category.Content = _food.Cathegory;

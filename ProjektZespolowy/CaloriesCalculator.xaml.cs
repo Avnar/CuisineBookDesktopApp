@@ -22,6 +22,8 @@ namespace ProjektZespolowy
         public CaloriesCalculator()
         {
             InitializeComponent();
+            
+            
         }
 
         private void b_back_Click(object sender, RoutedEventArgs e)
@@ -29,6 +31,7 @@ namespace ProjektZespolowy
             this.Close();
             Main_Window window = new Main_Window();
             window.Show();
+            
         }
         List<string> values = new List<string>();
 
@@ -40,7 +43,7 @@ namespace ProjektZespolowy
 
         private void b_add_click(object sender, RoutedEventArgs e)
         {
-            lb_summary.Items.Add(tb_value.Text + " kcal");
+            lb_summary.Items.Add(tb_value.Text);
             values.Add(tb_value.Text);
             tb_value.Clear();
         }

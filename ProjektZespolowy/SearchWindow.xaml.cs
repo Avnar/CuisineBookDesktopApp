@@ -61,7 +61,7 @@ namespace ProjektZespolowy
             }
             else if (pageNumber > Response.TotalPages)
             {
-                pageNumber = 0;
+                pageNumber = 1;
             }
             Pullrecipes();
         }
@@ -74,7 +74,7 @@ namespace ProjektZespolowy
             }
             else if (pageNumber < Response.TotalPages)
             {
-                pageNumber = 0;
+                pageNumber = 1;
             }
             Pullrecipes();
 

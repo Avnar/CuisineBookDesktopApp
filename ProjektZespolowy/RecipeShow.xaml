@@ -5,32 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektZespolowy"
         mc:Ignorable="d"
-        Title="RecipeShow" Height="450" Width="800" AllowsTransparency="True" Background="Transparent" WindowStyle="None">
+        Title="RecipeShow" Height="676" Width="589" AllowsTransparency="True" Background="Transparent" WindowStyle="None">
     <Grid>
-        <Border CornerRadius="10" Grid.RowSpan="3" Grid.ColumnSpan="2" >
+
+        <Border CornerRadius="10" Margin="0,0,0,1" >
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#FFD38412" Offset="0.0"/>
                     <GradientStop Color="#FFD38412" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <Border BorderThickness="1" BorderBrush="Black" RenderTransformOrigin="0.509,0.528">
-                <Label x:Name="lb_name" Content="Nazwa przepisu" Margin="0,4,0,0" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top" HorizontalAlignment="Center" Width="509"/>
+            <Border BorderThickness="1" BorderBrush="Black">
             </Border>
         </Border>
-        <Label x:Name="lb_lvl" Content="Poziom Trudności" Margin="604,67,6,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Right" Foreground="White" Height="38" VerticalAlignment="Top"/>
-        <Label x:Name="lb_time" Content="Czas Gotowania" Margin="604,107,6,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Right" Foreground="White" Height="38" VerticalAlignment="Top"/>
-        <Label x:Name="lb_category" Content="Kategoria" Margin="604,141,6,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Right" Foreground="White" Height="38" VerticalAlignment="Top"/>
 
-        <Label x:Name="lb_calories" Content="Wartość kaloryczna" Margin="604,174,6,238" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Right" Foreground="White"/>
-        <Button x:Name="b_cancel" Content="Wstecz&#xD;&#xA;" Margin="353,404,353,7" Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="20" BorderBrush="{x:Null}" Click="b_back_Click"/>
-        <TextBlock x:Name="tb_content" Text="Sposób Przygotowania" TextWrapping="Wrap" Margin="134,106,386,50" Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" FontSize="20" Foreground="White" TextAlignment="Left"/>
-        <TextBlock x:Name="tb_items" Text="Składniki" TextWrapping="Wrap"  Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" FontSize="20" Foreground="White" TextAlignment="Left" Margin="14,101,673,25"/>
-        <Label Content="Składniki" Margin="9,64,691,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
-        <Label Content="Poziom Trudności" Margin="423,67,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
-        <Label Content="Czas Przygotowania" Margin="423,107,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
-        <Label Content="Kategoria" Margin="423,141,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
-        <Label Content="Wartość Kaloryczna" Margin="423,174,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
-        <Label Content="Sposób przygotowania" Margin="128,65,441,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
+        <Label x:Name="lb_name" Content="Nazwa Przepisu" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" Margin="72,0,72,633" VerticalAlignment="Bottom"/>
+
+        <Label Content="Kategoria" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" Margin="229,0,229,593" VerticalAlignment="Bottom"/>
+        <Label x:Name="lb_category" Content="Kategoria"  FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" Margin="58,0,58,553" VerticalAlignment="Bottom" />
+
+        <Label Content="Poziom Trudności" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" Margin="190,125,189,0" VerticalAlignment="Top"/>
+        <Label x:Name="lb_lvl" Content="Poziom Trudności" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" Margin="190,0,190,473" VerticalAlignment="Bottom"/>
+
+        <Label Content="Czas Przygotowania" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Margin="176,205,176,433"/>
+        <Label x:Name="lb_time" Content="Czas Gotowania" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Margin="200,245,200,393" />
+
+        <Label Content="Wartość Kaloryczna" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" VerticalAlignment="Top" Height="38" Margin="178,285,178,0" />
+        <Label x:Name="lb_calories" Content="Wartość kaloryczna" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" VerticalAlignment="Top" Height="38" Margin="179,325,179,0"/>
+
+        <TextBlock x:Name="tb_items" Text="Składniki" TextWrapping="Wrap"  Background="Transparent" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" TextAlignment="Center" Foreground="White" VerticalAlignment="Bottom" Height="68" Margin="20,0,20,201"/>
+        <Label Content="Składniki" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" VerticalAlignment="Top" Height="38" Margin="238,365,238,0" />
+
+        <Label Content="Sposób przygotowania" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" VerticalAlignment="Top" Height="38" Margin="159,472,159,0" />
+        <TextBlock x:Name="tb_content" Text="Sposób Przygotowania" TextWrapping="Wrap"  Background="Transparent" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" TextAlignment="Center" Foreground="White" VerticalAlignment="Top" Height="123" Margin="20,513,20,0"/>
+        <Button x:Name="b_cancel" Content="Wstecz&#xD;&#xA;" Background="Transparent" 
+                FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="20" BorderBrush="{x:Null}" Click="b_back_Click" Margin="250,637,250,0" RenderTransformOrigin="0.507,1.307" Height="34" VerticalAlignment="Top">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
     </Grid>
 </Window>

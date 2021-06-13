@@ -16,8 +16,10 @@
             </Border.Background>
             <TextBlock x:Name="tb_ingridients" TextWrapping="Wrap" Margin="21,117,34,429"/>
         </Border>
-        <ListBox x:Name="lb_recipes" Margin="26,151,26,104" SelectedItem="lb_recipes_Selected" SelectionChanged="lb_recipes_SelectionChanged" MouseDoubleClick="lb_recipes_MouseDoubleClick"/>
-        <Button x:Name="back_b" Content="Menu główne" Background="Transparent" BorderThickness="0" Margin="189,530,181,6" RenderTransformOrigin="0.011,0.561" HorizontalContentAlignment="Center" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="18" Click="back_b_Click">
+        <ListBox x:Name="lb_recipes" Margin="26,151,26,104" SelectedItem="lb_recipes_Selected" Background="Transparent" FontFamily="Quicksand" Foreground="White" FontWeight="Bold" MouseDoubleClick="lb_recipes_MouseDoubleClick"/>
+        <Button x:Name="back_b" Content="Menu główne" Background="Transparent" 
+                BorderThickness="0" Margin="189,530,181,6" RenderTransformOrigin="0.011,0.561" 
+                HorizontalContentAlignment="Center" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="18" Click="back_b_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>
