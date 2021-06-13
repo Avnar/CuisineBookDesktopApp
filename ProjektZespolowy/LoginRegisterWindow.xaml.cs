@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using ProjektZespolowy.Klasy;
+using Newtonsoft.Json;
+using System.Net;
+using System.Net.Http;
+using System.Collections.Generic;
 
 namespace ProjektZespolowy
 {
@@ -26,21 +22,71 @@ namespace ProjektZespolowy
             password_tb.Text = "";
             usernameTb.Text = "";
         }
-
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
+       private readonly HttpClient _httpClient = new HttpClient();
+        public async Task<string> LoginAsync(string url)
         {
-            if (usernameTb.Text == "admin"&& password_tb.Text =="admin")
+            var login = new Dictionary<string, object>
             {
-                Main_Window mainwindow = new Main_Window();
-                mainwindow.Show();
-                this.Close();
+                {"username",usernameTb.Text},
+               
+                {"password",password_tb.Text}
+            };
+
+            string payloadFood = JsonConvert.SerializeObject(login);
+            var httpContent = new StringContent(payloadFood, Encoding.UTF8, "application/json");
+            var httpResponse = await _httpClient.PostAsync(url, httpContent);
+            string status = (httpResponse.StatusCode == HttpStatusCode.Created).ToString();
+            var response = await httpResponse.Content.ReadAsStringAsync();
+
+            switch (httpResponse.StatusCode) {
+                case HttpStatusCode.OK:
+                    var loginResponse = JsonConvert.DeserializeObject<LoginResponse>(response);
+                    TokenContainer.Token = loginResponse.Token;
+                    Main_Window mainwindow = new Main_Window();
+                    mainwindow.Show();
+                    this.Close();
+                    break;
+                case HttpStatusCode.Unauthorized:
+                    MessageBox.Show("Nieprawidłowe dane");
+                    
+                    break;
             }
-            else
+
+            return response;
+        }
+        public async Task<string> RegisterAsync(string url)
+        {
+            var register = new Dictionary<string, object>
             {
-                Application.Current.Shutdown();
+                {"username",usernameTb.Text},
+                {"email",register_tb.Text},
+                {"password",password_tb.Text}
+            };
+            string payloadFood = JsonConvert.SerializeObject(register);
+            var httpContent = new StringContent(payloadFood, Encoding.UTF8, "application/json");
+
+            var httpResponse = await _httpClient.PostAsync(url, httpContent);
+            var response = await httpResponse.Content.ReadAsStringAsync();
+
+            switch (httpResponse.StatusCode)
+            {
+                case HttpStatusCode.OK:
+                    login_b.Visibility = Visibility.Visible;
+                    register_b.Visibility = Visibility.Visible;
+                    sethidden();
+                    break;
+                case HttpStatusCode.InternalServerError:
+                    MessageBox.Show("Błąd rejestracji");
+                    break;
+
             }
+            return response;
         }
 
+        private async void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            await LoginAsync("https://localhost:44314/api/Identity/Login");
+        }
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             register_b.Visibility = Visibility.Hidden;
@@ -63,12 +109,9 @@ namespace ProjektZespolowy
             registerUnderline.Visibility = Visibility.Hidden;
         }
 
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        private async void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            login_b.Visibility = Visibility.Visible;
-            register_b.Visibility = Visibility.Visible;
-            sethidden();
-
+            await RegisterAsync("https://localhost:44314/api/Identity/Register");
         }
     }
 }

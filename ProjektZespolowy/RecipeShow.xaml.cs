@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ProjektZespolowy.Klasy;
 
 namespace ProjektZespolowy
 {
@@ -19,9 +20,11 @@ namespace ProjektZespolowy
     /// </summary>
     public partial class RecipeShow : Window
     {
-        public RecipeShow()
+        private Food _food;
+        public RecipeShow(Food food)
         {
             InitializeComponent();
+            _food = food;
             GettingData();
         }
         private void b_back_Click(object sender, RoutedEventArgs e)
@@ -33,39 +36,13 @@ namespace ProjektZespolowy
         }
         private void GettingData()
         {
-            if(SearchWindow.name=="Pomidorowa")
-            {
-                lb_name.Content = "Zupa Pomidorowa";
-                lb_category.Content = "Zupa";
-                tb_items.Text = "Pomidor, Śmietana, Sól, Pieprz, Woda";
-                lb_lvl.Content = "Średni";
-                lb_time.Content = "90min";
-                lb_calories.Content = "400"+" kcal";
-                tb_content.Text = "Przygotuj litrowy garnek potem dodaj składniki i gotowe.";
-            }
-            else if(SearchWindow.name == "Schabowy")
-            {
-                lb_name.Content = "Kotlet Schabowy";
-                lb_category.Content = "Danie Mięsne";
-                tb_items.Text = "Pierś z kurczaka, ziemniaki, mąka, jajka";
-                lb_lvl.Content = "Łatwy";
-                lb_time.Content = "30min";
-                lb_calories.Content = "700" + " kcal";
-                tb_content.Text = "Mięso umyj potem pokrój i smaż";
-            }
-            else if(SearchWindow.name == "Jajecznica")
-            {
-                lb_name.Content = "Jajecznica";
-                lb_category.Content = "Danie Mięsne";
-                tb_items.Text = "Jajka, masło, sól, pieprz";
-                lb_lvl.Content = "Łatwy";
-                lb_time.Content = "5min";
-                lb_calories.Content = "300" + " kcal";
-                tb_content.Text = "Rozgrzej masło na patelni wbij jajka smaż przez 4 min i wgl to dodaj jeszcze trochę soli i pieprzu";
-            }
-
-
-
+            lb_name.Content = _food.Title;
+            lb_category.Content = _food.Cathegory;
+            lb_lvl.Content = _food.Difficulty;
+            lb_time.Content = _food.PreparationTime;
+            lb_calories.Content = _food.CalorificValue;
+            tb_items.Text = _food.Ingredients;
+            tb_content.Text = _food.PreparingMethod;
         }
            
     }

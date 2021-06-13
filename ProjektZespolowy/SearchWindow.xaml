@@ -14,16 +14,30 @@
                     <GradientStop Color="#FFD38412" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
+            <TextBlock x:Name="tb_ingridients" TextWrapping="Wrap" Margin="21,117,34,429"/>
         </Border>
-        <TextBox x:Name="search_tb" Margin="24,26,24,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.497,0.737" Height="25" TextChanged="search_tb_TextChanged"/>
-        <ListBox x:Name="lb_recipes" Margin="26,73,26,65" SelectedItem="lb_recipes_Selected" SelectionChanged="lb_recipes_SelectionChanged"/>
-        <Button x:Name="back_b" Content="Powrót" Background="Transparent" BorderThickness="0" Margin="212,523,212,13" RenderTransformOrigin="0.011,0.561" HorizontalContentAlignment="Center" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="18" Click="back_b_Click">
+        <ListBox x:Name="lb_recipes" Margin="26,151,26,104" SelectedItem="lb_recipes_Selected" SelectionChanged="lb_recipes_SelectionChanged" MouseDoubleClick="lb_recipes_MouseDoubleClick"/>
+        <Button x:Name="back_b" Content="Menu główne" Background="Transparent" BorderThickness="0" Margin="189,530,181,6" RenderTransformOrigin="0.011,0.561" HorizontalContentAlignment="Center" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="18" Click="back_b_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Label x:Name="label" Content="Label" Margin="0,0,0,535"/>
+        <Label x:Name="label" Content="Wybierz przepis" Margin="106,23,106,512"  FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" />
+        <Button x:Name="b_recipes_next" Content="Kolejne przepisy" Background="Transparent" BorderThickness="0" Margin="323,467,28,69" RenderTransformOrigin="0.011,0.561" HorizontalContentAlignment="Center" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="18" Click="b_recipes_next_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="b_recipes_back" Content="Poprzednie przepisy" Background="Transparent" BorderThickness="0" Margin="28,467,288,69" RenderTransformOrigin="0.011,0.561" HorizontalContentAlignment="Center" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="18" Click="b_recipes_back_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>

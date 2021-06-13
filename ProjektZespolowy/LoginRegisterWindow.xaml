@@ -26,7 +26,7 @@
 
                 <TextBox x:Name="register_tb" FontFamily="Quicksand"
                     FontWeight="Bold"
-                    Text="Nazwa Użytkownika"
+                    Text="email"
                     FontSize="20"
                     Foreground="White"
                     Background="Transparent"
@@ -53,7 +53,7 @@
                 <StackPanel Orientation="Horizontal">
                     <TextBox x:Name="usernameTb" FontFamily="Quicksand"
                              FontWeight="Bold"
-                             Text="e-mail"
+                             Text="Nazwa użytkownika"
                              FontSize="20"
                              HorizontalAlignment="Center"
                              Foreground="White"

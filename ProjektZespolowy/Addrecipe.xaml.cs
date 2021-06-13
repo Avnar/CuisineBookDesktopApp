@@ -11,6 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ProjektZespolowy.Klasy;
+using Newtonsoft.Json;
+using System.Net.Http;
+
 
 namespace ProjektZespolowy
 {
@@ -23,8 +27,38 @@ namespace ProjektZespolowy
         {
             InitializeComponent();
         }
-        string nazwa, elements, level, time, calories, category, content;
-     
+
+        public async Task<string> PostRequest(string url)
+        {
+            Food food = new Food
+            {
+                Title = tb_name.Text,
+                Ingredients = tb_elements.Text,
+                Difficulty = tb_level.Text,
+                PreparationTime = tb_time.Text,
+                CalorificValue = int.Parse(tb_calories.Text),
+                PreparingMethod = tb_content.Text,
+                Cathegory = tb_category.Text
+            };
+
+            string payloadFood = JsonConvert.SerializeObject(food);
+            var httpContent = new StringContent(payloadFood, Encoding.UTF8, "application/json");
+            var httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Add("Authorization", "Bearer " + TokenContainer.Token);
+            var httpResponse = await httpClient.PostAsync(url, httpContent);
+            var response = "";
+
+            if (httpResponse.Content != null)
+            {
+                response = await httpResponse.Content.ReadAsStringAsync();
+            }
+
+           // MessageBox.Show(response);
+            Food deserializedFood = JsonConvert.DeserializeObject<Food>(payloadFood);
+           // MessageBox.Show(deserializedFood.ToString());
+            return response;
+        }
+
         private void b_cancel_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -39,22 +73,9 @@ namespace ProjektZespolowy
                 DragMove();
         }
 
-        private void b_acceptRecipe_Click(object sender, RoutedEventArgs e)
+        private async void b_acceptRecipe_Click(object sender, RoutedEventArgs e)
         {
-            nazwa = tb_name.Text;
-            elements = tb_elements.Text;
-            level = tb_level.Text;
-            time = tb_time.Text;
-            calories = tb_calories.Text;
-            category = tb_category.Text;
-            content = tb_content.Text;
-            if(nazwa!=null && elements!=null && level!=null&&time!=null&&calories!=null&&category!=null&&content!=null)
-            {
-                MessageBox.Show("Sukces");
-                this.Close();
-                Main_Window mainwindow = new Main_Window();
-                mainwindow.Show();
-            }
+            await PostRequest(Endpoints.POSTapiFood);
         }
     }
 }

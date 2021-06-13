@@ -24,13 +24,13 @@
 
         <Label x:Name="lb_calories" Content="Wartość kaloryczna" Margin="604,174,6,238" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Right" Foreground="White"/>
         <Button x:Name="b_cancel" Content="Wstecz&#xD;&#xA;" Margin="353,404,353,7" Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" Foreground="White" FontSize="20" BorderBrush="{x:Null}" Click="b_back_Click"/>
-        <TextBlock x:Name="tb_content" Text="Sposób Przygotowania" TextWrapping="Wrap" Margin="22,224,24,52" Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" FontSize="20" Foreground="White" TextAlignment="Left"/>
-        <TextBlock x:Name="tb_items" Text="Składniki" TextWrapping="Wrap"  Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" FontSize="20" Foreground="White" TextAlignment="Left" Margin="7,102,380,284"/>
-        <Label Content="Składniki" Margin="80,67,518,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tb_content" Text="Sposób Przygotowania" TextWrapping="Wrap" Margin="134,106,386,50" Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" FontSize="20" Foreground="White" TextAlignment="Left"/>
+        <TextBlock x:Name="tb_items" Text="Składniki" TextWrapping="Wrap"  Background="Transparent" FontFamily="Quicksand" FontWeight="Bold" FontSize="20" Foreground="White" TextAlignment="Left" Margin="14,101,673,25"/>
+        <Label Content="Składniki" Margin="9,64,691,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
         <Label Content="Poziom Trudności" Margin="423,67,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
         <Label Content="Czas Przygotowania" Margin="423,107,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
         <Label Content="Kategoria" Margin="423,141,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
         <Label Content="Wartość Kaloryczna" Margin="423,174,175,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
-        <Label Content="Sposób przygotowania" Margin="65,170,504,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
+        <Label Content="Sposób przygotowania" Margin="128,65,441,0" FontFamily="Quicksand" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top"/>
     </Grid>
 </Window>
