@@ -117,7 +117,7 @@ namespace ProjektZespolowy {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ProjektZespolowy;component/recipeshow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ProjektZespolowy;V1.0.0.0;component/recipeshow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\RecipeShow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
