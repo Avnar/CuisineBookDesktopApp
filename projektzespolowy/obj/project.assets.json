@@ -571,11 +571,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Apkaprojektzespol\\desktopApp\\ProjektZespolowy\\ProjektZespolowy.csproj",
+      "projectUniqueName": "D:\\XD\\PZ2-2021-team3\\CuisineBookDesktopApp\\ProjektZespolowy\\ProjektZespolowy.csproj",
       "projectName": "ProjektZespolowy",
-      "projectPath": "D:\\Apkaprojektzespol\\desktopApp\\ProjektZespolowy\\ProjektZespolowy.csproj",
+      "projectPath": "D:\\XD\\PZ2-2021-team3\\CuisineBookDesktopApp\\ProjektZespolowy\\ProjektZespolowy.csproj",
       "packagesPath": "C:\\Users\\Dragonexx\\.nuget\\packages\\",
-      "outputPath": "D:\\Apkaprojektzespol\\desktopApp\\ProjektZespolowy\\obj\\",
+      "outputPath": "D:\\XD\\PZ2-2021-team3\\CuisineBookDesktopApp\\ProjektZespolowy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
