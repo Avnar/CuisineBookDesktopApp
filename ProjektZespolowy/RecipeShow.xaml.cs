@@ -27,7 +27,7 @@ namespace ProjektZespolowy
             _food = food;
             GettingData();
         }
-        
+
         private void b_back_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -45,6 +45,10 @@ namespace ProjektZespolowy
             tb_items.Text = _food.Ingredients;
             tb_content.Text = _food.PreparingMethod;
         }
-           
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+        }
     }
 }

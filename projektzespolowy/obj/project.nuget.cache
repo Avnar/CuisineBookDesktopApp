@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hC5rAFZiiEjDKushcIJKXIw2Lh1G8jdJZWiZxEeTrnOsYlejCKsoT4sAAnsYo4mzUYByePZ9XfoIh/QEy+Duhw==",
+  "dgSpecHash": "gxE0S4O6IshztQ0V7fmELgy8/M826p91JaIgIcH92JhjIYenJ7Xdri5SObnFK9018jr7A+jb5rvaXC1vYGKQ3A==",
   "success": true,
-  "projectFilePath": "D:\\XD\\PZ2-2021-team3\\CuisineBookDesktopApp\\ProjektZespolowy\\ProjektZespolowy.csproj",
+  "projectFilePath": "D:\\XDDD\\PZ2-2021-team3\\CuisineBookDesktopApp\\ProjektZespolowy\\ProjektZespolowy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dragonexx\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.6\\microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
     "C:\\Users\\Dragonexx\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.6\\microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",

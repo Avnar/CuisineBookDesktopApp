@@ -115,6 +115,7 @@ namespace ProjektZespolowy
         private async void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             await RegisterAsync("https://localhost:44314/api/Identity/Register");
+            lb_email.Visibility = Visibility.Hidden;
         }
 
         private void b_close_Click(object sender, RoutedEventArgs e)

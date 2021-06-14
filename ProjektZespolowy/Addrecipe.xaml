@@ -14,7 +14,7 @@
                     <GradientStop Color="#FFD38412" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <Border BorderThickness="1" BorderBrush="Black">
+            <Border BorderThickness="0" BorderBrush="Black">
                 <Label Content="Dodaj przepis" Margin="0,4,0,0" FontFamily="Quicksand" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" Height="38" VerticalAlignment="Top" HorizontalAlignment="Center" Width="509"/>
             </Border>
         </Border>

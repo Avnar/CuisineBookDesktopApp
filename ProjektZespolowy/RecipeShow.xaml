@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektZespolowy"
         mc:Ignorable="d"
-        Title="RecipeShow" Height="676" Width="589" AllowsTransparency="True" Background="Transparent" WindowStyle="None">
+        Title="RecipeShow" Height="676" Width="589" AllowsTransparency="True" Background="Transparent" WindowStyle="None" MouseDown="Window_MouseDown">
     <Grid>
 
         <Border CornerRadius="10" Margin="0,0,0,1" >
@@ -15,7 +15,7 @@
                     <GradientStop Color="#FFD38412" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <Border BorderThickness="1" BorderBrush="Black">
+            <Border BorderThickness="0" BorderBrush="Black">
             </Border>
         </Border>
 
